@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+:root{
+    --fontePadrao: 'DM Sans', sans-serif;
+    --corFundo: #FFF7D4;
+    --corSecundaria: #FFD95A;
+    --corPrimaria: #C07F00;
+    --corFonte: #4C3D3D;
+    /* DARK MODE */
+    --corFundoDM:#0C134F;
+    --corSecundariaDM:#5C469C;
+    --corPrimariaDM:#1D267D;
+    --corFonteDM:#D4ADFC;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--fontePadrao);
+    background-color: var(--corFundo);
+}

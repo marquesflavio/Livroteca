@@ -18,6 +18,7 @@
     [] JavaScript
 
 ## Aplicações desejadas
+    [] Dark mode
     [] Ao Clicar no livro a imagem aumenta o zoom
     [] Buscador de livro por nome (ao digitar)
     [] Filtro de livros lidos, lendo e desejo ler (mostra apenas os marcados como...)
