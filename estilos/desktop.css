@@ -7,6 +7,7 @@
     padding: 8px;
     display: flex;
     justify-content: space-evenly;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
     
 }
 /*Logo*/
@@ -52,13 +53,38 @@
 .fa-moon{
     color: var(--corFonte);
     position: absolute;
-    top: 10px;
+    top: 25px;
     cursor: pointer;
+    display: block;
 }
 .fa-sun{
     color: var(--corFonte);
     position: absolute;
-    top: 35px;
+    top: 25px;
     cursor: pointer;
+    display: none;
     /* color um display none no modo inativo */
+}
+
+/*Livros*/
+.container{
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+}
+.container-livros{
+    border: 1px solid black;
+    width: 200px;
+}
+.livros{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.livros_img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    
 }
