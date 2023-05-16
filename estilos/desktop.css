@@ -47,10 +47,18 @@
     border: 1px solid var(--corFonte);
     border-radius: 15px;
     padding: 5px;
+    width: 25px;
 }
-.svg-inline--fa {
+.fa-moon{
     color: var(--corFonte);
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 10px;
     cursor: pointer;
+}
+.fa-sun{
+    color: var(--corFonte);
+    position: absolute;
+    top: 35px;
+    cursor: pointer;
+    /* color um display none no modo inativo */
 }
