@@ -96,20 +96,49 @@
     position: absolute;
     background-color: var(--corSecundaria);
     width: 170px;
-    height: 100px;
     padding: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
     right: 0px;
     top: 81px;
     text-align: center;
+    border: 0.5px solid rgba(0, 0, 0, 0.096);
+    
 }
 .lendo{
-    background-color: #AAA;
+    background-color: var(--corSecundaria);
     top: 131px;
+    
 }
 .desejo-ler{
-    background-color: #333;
+    background-color: var(--corSecundaria);
     top: 181px;
 }
+
+/*Itens de lista do menu lateral*/
+/* Botão ao do H1 :before? no click a ul contida aparece */
+
+.menu_lateral_lista li{
+    list-style: none;
+    text-align: left;
+    margin: 3px 0;
+}
+
 /* Fazer um hover, para quando o mouse passar em cima de algum menu ele se destaque dos outros */
+
+/*Rodapé*/
+.rodape{
+    background-color: var(--corSecundaria);
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    position: absolute;
+    bottom: 0px;
+}
+.rodape a{
+    text-decoration: none;
+}
+.rodape a:hover{
+    color: #FFF;
+}
