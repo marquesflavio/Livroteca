@@ -9,11 +9,12 @@
 
 ## Projeto estará pronto quando:
     [] For possível marcar os livros como lido, lendo ou desejo ler.
+    [] For possível classificar os livros em abas diferenciadas
 
 ## Passo a passo: 
-    []Definir o design da página nos dois layouts
+    [X]Definir o design da página nos dois layouts
     [] Estruturar o HTML
-    [] Selecionar as imagens
+    [X] Selecionar as imagens
     [] Fazer o CSS
     [] JavaScript
 
