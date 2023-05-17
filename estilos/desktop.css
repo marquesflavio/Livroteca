@@ -53,17 +53,27 @@
 .fa-moon{
     color: var(--corFonte);
     position: absolute;
-    top: 25px;
+    top: 15px;
     cursor: pointer;
+    display: block;
+    transition: 1s;
+}
+/* Esconder botao lua */
+.fa-moon-hide{
+    display: none;
+}
+/* Aparecer botao sol */
+.fa-sun-show{
     display: block;
 }
 .fa-sun{
     color: var(--corFonte);
     position: absolute;
-    top: 25px;
+    top: 35px;
     cursor: pointer;
-    display: none;
-    /* color um display none no modo inativo */
+    display: block;
+    transition: 1s;
+    /* colocar um display none no modo inativo */
 }
 
 /*Livros*/
@@ -71,11 +81,12 @@
     display: flex;
     padding: 15px;
     gap: 10px;
+
 }
 .container-livros{
     border: 1px solid black;
     border-radius: 5px;
-    width: 200px;
+    width: 180px;
     
 }
 .livros{
@@ -122,8 +133,18 @@
     list-style: none;
     text-align: left;
     margin: 3px 0;
+    display: none;
 }
 
+.menu_lateral{
+    list-style: none;
+    text-align: left;
+    margin: 3px 0;
+    display: block;
+}
+.menu_lateral:hover .menu_lateral_lista li{
+    display: block;
+}
 /* Fazer um hover, para quando o mouse passar em cima de algum menu ele se destaque dos outros */
 
 /*Rodapé*/
