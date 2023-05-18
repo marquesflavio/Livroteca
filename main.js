@@ -1,6 +1,6 @@
-const botaoLua = document.querySelector('.botao-lua')
+const botaoLua = document.querySelector('.fa-moon')
 
 botaoLua.addEventListener('click', () => {
-    console.log('clicou')
+    alert('clicou')
 })
 
