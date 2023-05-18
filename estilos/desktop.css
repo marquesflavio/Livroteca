@@ -127,7 +127,7 @@
 .menu{
     background-color: var(--corFundo);
     padding: 3px;
-    margin: 5px 0  ;
+    margin: 5px 0 ;
 }
 
 /*Itens de lista do menu lateral*/
@@ -140,8 +140,6 @@
     display: block;
 }
 
-.menu_lateral{
-}
 
 /*Rodapé*/
 .rodape{
