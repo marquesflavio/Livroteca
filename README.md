@@ -24,3 +24,7 @@
     [] Buscador de livro por nome (ao digitar)
     [] Filtro de livros lidos, lendo e desejo ler (mostra apenas os marcados como...)
     [] Existe alguma API de livros?
+
+
+CORRIGIR O ASIDE
+VER BOTAO DARKMODE

@@ -81,6 +81,10 @@
     display: flex;
     padding: 15px;
     gap: 10px;
+    /* background-color: aqua; */
+    width: 80%;
+    
+
 
 }
 .container-livros{
@@ -106,24 +110,24 @@
 .menu_lateral{
     position: absolute;
     background-color: var(--corSecundaria);
-    width: 170px;
-    padding: 5px;
-    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 25px 0 0 25px ;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
     right: 0px;
     top: 81px;
     text-align: center;
     border: 0.5px solid rgba(0, 0, 0, 0.096);
+    list-style: none;
+    text-align: left;
+    margin: 3px 0;
+    display: block;
     
 }
-.lendo{
-    background-color: var(--corSecundaria);
-    top: 131px;
-    
-}
-.desejo-ler{
-    background-color: var(--corSecundaria);
-    top: 181px;
+.menu{
+    background-color: var(--corFundo);
+    padding: 3px;
+    margin: 5px 0  ;
 }
 
 /*Itens de lista do menu lateral*/
@@ -133,19 +137,11 @@
     list-style: none;
     text-align: left;
     margin: 3px 0;
-    display: none;
+    display: block;
 }
 
 .menu_lateral{
-    list-style: none;
-    text-align: left;
-    margin: 3px 0;
-    display: block;
 }
-.menu_lateral:hover .menu_lateral_lista li{
-    display: block;
-}
-/* Fazer um hover, para quando o mouse passar em cima de algum menu ele se destaque dos outros */
 
 /*Rodapé*/
 .rodape{
