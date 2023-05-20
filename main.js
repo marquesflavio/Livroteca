@@ -16,10 +16,19 @@ function pesquisaLivro(){
             x[i].style.display="none";
         }
         else {
-            x[i].style.display="list-item";                 
+            x[i].style.display="";                 
         }
     }
+}
+pesquisaLivro()
 
+// Função para pegar itens do select
+const select = document.querySelector('#marcaLivro')
+
+function valorDoSelect(){
+    let textoDoSelect = select.options[select.selectedIndex]
+    textoDoSelect.text
+    console.log(textoDoSelect)
 }
 
-pesquisaLivro()
+valorDoSelect()
