@@ -27,8 +27,20 @@ const select = document.querySelector('#marcaLivro')
 
 function valorDoSelect(){
     let textoDoSelect = select.options[select.selectedIndex]
-    textoDoSelect.text
-    console.log(textoDoSelect)
+    let valueDoSelect = textoDoSelect.value;
+    console.log(valueDoSelect)
+
+    if (valueDoSelect == "Lido"){
+        console.log('mudou pra lido')
+        document.querySelector('.container-livros').style.backgroundColor = '#69F595';
+
+    } else if (valueDoSelect == "Lendo"){
+        document.querySelector('.container-livros').style.backgroundColor = '#F5EF44';
+
+    }
+    
+
+    
 }
 
 valorDoSelect()

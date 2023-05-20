@@ -81,16 +81,16 @@
     display: flex;
     padding: 15px;
     gap: 10px;
-    /* background-color: aqua; */
     width: 80%;
     
-
-
+    
+    
 }
 .container-livros{
     border: 1px solid black;
     border-radius: 5px;
     width: 180px;
+    /* background-color: aqua; */
     
 }
 .livros{
