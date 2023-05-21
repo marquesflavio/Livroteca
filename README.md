@@ -26,5 +26,4 @@
     [] Existe alguma API de livros?
 
 
-CORRIGIR O ASIDE
-VER BOTAO DARKMODE
+Utilizar LocalStorage para guardar infos dos livros marcados como...

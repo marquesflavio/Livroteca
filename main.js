@@ -22,7 +22,7 @@ function pesquisaLivro(){
 }
 pesquisaLivro()
 
-// Função para pegar itens do select
+// Função para estilizar o container de acordo com a option de cada livro.
 const select = document.querySelector('#marcaLivro')
 
 function valorDoSelect(){
@@ -37,10 +37,11 @@ function valorDoSelect(){
     } else if (valueDoSelect == "Lendo"){
         document.querySelector('.container-livros').style.backgroundColor = '#F5EF44';
 
+    } else if (valueDoSelect == "Desejo Ler"){
+        document.querySelector('.container-livros').style.backgroundColor = '#9AC4FA'
+        
+    } else {
+        document.querySelector('.container-livros').style.backgroundColor = ''
     }
-    
 
-    
-}
-
-valorDoSelect()
+valorDoSelect()}
