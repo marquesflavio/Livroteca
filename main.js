@@ -1,15 +1,16 @@
-const botaoLua = document.querySelector('.fa-moon')
+const botaoLua = document.querySelector('.svg-inline--fa')
+console.log(botaoLua)
 
-botaoLua.addEventListener('click', () => {
-    alert('clicou')
-})
+
+
+
 
 function pesquisaLivro(){
     let input = document.querySelector('.search').value
-    console.log(input)
+    // console.log(input)
     input=input.toLowerCase(); // Para não haver diferenciação da forma escrita
     let x = document.getElementsByClassName('livros-estante')
-    console.log(x)
+    // console.log(x)
 
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
@@ -24,6 +25,8 @@ pesquisaLivro()
 
 // Função para estilizar o container de acordo com a option de cada livro.
 const select = document.querySelector('#marcaLivro')
+console.log(select)
+
 
 function valorDoSelect(){
     let textoDoSelect = select.options[select.selectedIndex]
@@ -43,5 +46,6 @@ function valorDoSelect(){
     } else {
         document.querySelector('.container-livros').style.backgroundColor = ''
     }
+
 
 valorDoSelect()}
