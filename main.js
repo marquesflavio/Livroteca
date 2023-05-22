@@ -1,7 +1,8 @@
-const botaoLua = document.querySelector('.svg-inline--fa')
-console.log(botaoLua)
+const botaoLua = document.querySelector('.darkmode')
 
-
+botaoLua.addEventListener('click', ()=>{
+    console.log('clicou')
+})
 
 
 

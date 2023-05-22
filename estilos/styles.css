@@ -21,4 +21,5 @@
 body{
     font-family: var(--fontePadrao);
     background-color: var(--corFundo);
+    color: var(--corFonte);
 }
