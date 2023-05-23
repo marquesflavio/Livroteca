@@ -6,12 +6,6 @@
     --corSecundaria: #FFD95A;
     --corPrimaria: #C07F00;
     --corFonte: #4C3D3D;
-    /* DARK MODE */
-    --corFundoDM:#0C134F;
-    --corSecundariaDM:#5C469C;
-    --corPrimariaDM:#1D267D;
-    --corFonteDM:#D4ADFC;
-
 }
 *{
     margin: 0;

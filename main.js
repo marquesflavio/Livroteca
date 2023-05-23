@@ -55,11 +55,20 @@ select.forEach((select) => {
 })
 
 /*Ativar dark mode*/
-const botaoLua = document.querySelector('.darkmode')
-botaoLua.addEventListener('click', ()=>{
-    if (document.querySelector('fa-solid').classList.contains('show')){
-        document.querySelector('fa-solid').classList.add('hide')
-        document.querySelector('fa-solid').classList.remove('show')
+const darkMode = document.querySelector('.darkmode')
+darkMode.addEventListener('click', () => {
+    botaoLua = document.querySelector('.fa-moon')
+    botaoSol = document.querySelector('.fa-sun')
+    if (botaoLua.classList.contains("show")){
+        botaoLua.classList.remove('show')
+        botaoLua.classList.add('hide')
+        botaoSol.classList.add('show')
+        
+    } else {
+        botaoSol.classList.remove('show')
+        botaoSol.classList.add('hide')
+        botaoLua.classList.add('show')
+        
     }
 })
 
