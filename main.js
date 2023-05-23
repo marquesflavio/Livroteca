@@ -1,7 +1,10 @@
 const botaoLua = document.querySelector('.darkmode')
 
 botaoLua.addEventListener('click', ()=>{
-    console.log('clicou')
+    if (document.querySelector('fa-solid').classList.contains('show')){
+        document.querySelector('fa-solid').classList.add('hide')
+        document.querySelector('fa-solid').classList.remove('show')
+    }
 })
 
 
@@ -25,28 +28,35 @@ function pesquisaLivro(){
 pesquisaLivro()
 
 // Função para estilizar o container de acordo com a option de cada livro.
-const select = document.querySelector('#marcaLivro')
-console.log(select)
+const select = document.querySelectorAll('#marcaLivro')
 
-
-function valorDoSelect(){
-    let textoDoSelect = select.options[select.selectedIndex]
-    let valueDoSelect = textoDoSelect.value;
-    console.log(valueDoSelect)
-
-    if (valueDoSelect == "Lido"){
-        console.log('mudou pra lido')
-        document.querySelector('.container-livros').style.backgroundColor = '#69F595';
-
-    } else if (valueDoSelect == "Lendo"){
-        document.querySelector('.container-livros').style.backgroundColor = '#F5EF44';
-
-    } else if (valueDoSelect == "Desejo Ler"){
-        document.querySelector('.container-livros').style.backgroundColor = '#9AC4FA'
+select.forEach((select) => {
+    select.addEventListener('change', function valorDoSelect(){
+        console.log(select.value)
+        if (select.value == "Lido"){
+            let containerLivro = document.querySelectorAll('.container-livros')
+            containerLivro.forEach((livro) => {
+                livro.style.backgroundColor = '#69F595'; 
+            }) 
         
-    } else {
-        document.querySelector('.container-livros').style.backgroundColor = ''
-    }
+        } else if (select.value == "Lendo"){
+            document.querySelector('.container-livros').style.backgroundColor = '#F5EF44';
+        
+        } else if (select.value == "Desejo Ler"){
+            document.querySelector('.container-livros').style.backgroundColor = '#9AC4FA'
+            
+        } else {
+            document.querySelector('.container-livros').style.backgroundColor = ''
+        }
+    })
+})
 
 
-valorDoSelect()}
+    
+
+
+
+ 
+
+
+
