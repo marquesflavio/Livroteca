@@ -30,31 +30,7 @@ function pesquisaLivro(){
 }
 pesquisaLivro()
 
-// Função para estilizar o container de acordo com a option de cada livro.
-const select = document.querySelectorAll('#marcaLivro')
-
-select.forEach((select) => {
-    select.addEventListener('change', function valorDoSelect(){
-        console.log(select.value)
-        if (select.value == "Lido"){
-            let containerLivro = document.querySelectorAll('.container-livros')
-            containerLivro.forEach((livro) => {
-                livro.style.backgroundColor = '#69F595'; 
-            }) 
-        
-        } else if (select.value == "Lendo"){
-            document.querySelector('.container-livros').style.backgroundColor = '#F5EF44';
-        
-        } else if (select.value == "Desejo Ler"){
-            document.querySelector('.container-livros').style.backgroundColor = '#9AC4FA'
-            
-        } else {
-            document.querySelector('.container-livros').style.backgroundColor = ''
-        }
-    })
-})
-
-/*Ativar dark mode*/
+/*Ativar botão dark mode*/
 const darkMode = document.querySelector('.darkmode')
 darkMode.addEventListener('click', () => {
     botaoLua = document.querySelector('.fa-moon')
@@ -72,7 +48,16 @@ darkMode.addEventListener('click', () => {
     }
 })
 
-    
+/*Armazenamento do Estado dos livros com LocalStorage*/
+
+let statusLeitura = document.querySelectorAll('#marcaLivro')
+statusLeitura.forEach(function(item){
+    item.addEventListener('change', () =>{
+        console.log(item.value)
+        localStorage.setItem('Leitura', JSON.stringify(item.value));
+    })
+})
+
 
 
 
