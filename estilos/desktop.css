@@ -91,7 +91,8 @@
 .container-livros{
     border: 1px solid black;
     border-radius: 5px;
-    width: 180px;
+    padding: 2px;
+    width: 175px;
     /* background-color: aqua; */
     
 }
