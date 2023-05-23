@@ -8,15 +8,15 @@
     Terá layout responsivo para 2 telas. Mobile e Acima de 720px
 
 ## Projeto estará pronto quando:
-    [] For possível marcar os livros como lido, lendo ou desejo ler.
-    [] For possível classificar os livros em abas diferenciadas
+    [X] For possível marcar os livros como lido, lendo ou desejo ler.
+    
 
 ## Passo a passo: 
     [X]Definir o design da página nos dois layouts
-    [] Estruturar o HTML
+    [X] Estruturar o HTML
     [X] Selecionar as imagens
-    [] Fazer o CSS
-    [] JavaScript
+    [X] Fazer o CSS
+    [X] JavaScript
 
 ## Aplicações desejadas
     [] Dark mode
@@ -26,4 +26,4 @@
     [] Existe alguma API de livros?
 
 
-Utilizar LocalStorage para guardar infos dos livros marcados como...
+Utilizar LocalStorage para guardar infos dos livros marcados...

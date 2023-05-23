@@ -100,6 +100,40 @@
     /* background-color: aqua; */
     
 }
+/*Avaliação livros*/
+.avaliacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icone-estrela{
+    list-style: none;
+    color: var(--corSecundaria);
+
+}
+.icone-estrela::before{
+    content: "\2605";
+    font-size: 18px;
+}
+.icone-estrela:hover{
+    cursor: pointer;
+}
+
+/*adicionar estrela vazio nas posteriores ao hover*/
+.icone-estrela.ativo ~ .icone-estrela::before{
+    content: "\2606";
+}
+
+.avaliacao:hover ~ .icone-estrela::before{
+    content: "\2605";
+}
+.icone-estrela:hover ~.icone-estrela::before{
+    content: "\2606";
+}
+
+
+
+
 .livros{
     display: flex;
     flex-direction: column;

@@ -1,20 +1,23 @@
-const botaoLua = document.querySelector('.darkmode')
 
-botaoLua.addEventListener('click', ()=>{
-    if (document.querySelector('fa-solid').classList.contains('show')){
-        document.querySelector('fa-solid').classList.add('hide')
-        document.querySelector('fa-solid').classList.remove('show')
+/*Avaliação dos livros*/
+let estrelas = document.querySelectorAll('icone-estrela')
+document.addEventListener('click', function(e){
+    let classeEstrela = e.target.classList;
+    if(!classeEstrela.contains('ativo')){
+        estrelas.forEach(function(item){
+            item.classList.remove('ativo')
+        
+        });
+            classeEstrela.add('ativo');
     }
 })
 
-
-
+/*Barra de Pesquisa*/
 function pesquisaLivro(){
     let input = document.querySelector('.search').value
-    // console.log(input)
+
     input=input.toLowerCase(); // Para não haver diferenciação da forma escrita
     let x = document.getElementsByClassName('livros-estante')
-    // console.log(x)
 
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
@@ -51,6 +54,14 @@ select.forEach((select) => {
     })
 })
 
+/*Ativar dark mode*/
+const botaoLua = document.querySelector('.darkmode')
+botaoLua.addEventListener('click', ()=>{
+    if (document.querySelector('fa-solid').classList.contains('show')){
+        document.querySelector('fa-solid').classList.add('hide')
+        document.querySelector('fa-solid').classList.remove('show')
+    }
+})
 
     
 
