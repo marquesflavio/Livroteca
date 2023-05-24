@@ -4,7 +4,7 @@
     
     .cabecalho{
         background-color: var(--corSecundaria);
-        height: 150px;
+        height: 100px;
         width: 100%;
         padding: 8px;
         display: flex;
@@ -17,7 +17,7 @@
   
     .cabecalho a{
         text-decoration: none;
-        font-size: 30px;
+        font-size: 25px;
         font-style: italic;
         font-weight: bold;
         color: var(--corFonte);
@@ -32,7 +32,7 @@
         height: 40px;
         padding: 0 8px;
         border-radius: 8px;
-        margin: auto;
+        /* margin: auto; */
     }
     .cabecalho_nav input:hover,
     .cabecalho_nav button:hover{
@@ -45,7 +45,7 @@
         width: 40px;
         height: 40px;
         border-radius: 8px;
-        margin: auto;
+        /* margin: auto; */
     }
     /*Imagem perfil*/
     .cabecalho img{
