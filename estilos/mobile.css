@@ -2,5 +2,94 @@
 
 @media (max-width: 720px) {
     
+    .cabecalho{
+        background-color: var(--corSecundaria);
+        height: 150px;
+        width: 100%;
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+        
+    }
     
+    /*Logo*/
+  
+    .cabecalho a{
+        text-decoration: none;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: bold;
+        color: var(--corFonte);
+    }
+    .cabecalho_nav{
+        display: flex;
+        flex-direction: row;
+    }
+    /*Input*/
+    .cabecalho_nav input{
+        width: 150px;
+        height: 40px;
+        padding: 0 8px;
+        border-radius: 8px;
+        margin: auto;
+    }
+    .cabecalho_nav input:hover,
+    .cabecalho_nav button:hover{
+        border-style: double;
+        border-color: rgb(37, 37, 218);
+        cursor: pointer;
+    }
+    /*Botão*/
+    .cabecalho_nav button{
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        margin: auto;
+    }
+    /*Imagem perfil*/
+    .cabecalho img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: none;
+    }
+
+
+    /*Livros*/
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: auto;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+    
+    
+}
+.container-livros{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    width: 175px;
+    /* background-color: aqua; */
+    
+}
+/*Rodapé*/
+.rodape{
+    background-color: var(--corSecundaria);
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    position: fixed;
+    bottom: 0px;
+}
+.rodape a{
+    text-decoration: none;
+}
+.rodape a:hover{
+    color: #FFF;
+}
 }
