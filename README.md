@@ -1,4 +1,4 @@
-# Projeto Livroteca - Prazo: 23/05/2023.
+# Projeto Livroteca 
 
 ## Objetivo: 
     Consiste numa aplicação para organizar suas leituras.
@@ -12,7 +12,7 @@
     
 
 ## Passo a passo: 
-    [X]Definir o design da página nos dois layouts
+    [X] Definir o design da página nos dois layouts
     [X] Estruturar o HTML
     [X] Selecionar as imagens
     [X] Fazer o CSS
@@ -20,7 +20,7 @@
 
 ## Aplicações desejadas
     [] Dark mode
-    [] Ao Clicar no livro a imagem aumenta o zoom
+    [] Ao clicar no livro a imagem aumenta o zoom
     [] Buscador de livro por nome (ao digitar)
     [] Filtro de livros lidos, lendo e desejo ler (mostra apenas os marcados como...)
     [] Existe alguma API de livros?
