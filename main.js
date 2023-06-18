@@ -1,4 +1,18 @@
 
+
+
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.querySelector(".navbar-hide").style.top = "0";
+} else {
+    document.querySelector(".navbar-hide").style.top = "-75px";
+}
+}
+        
 /*Avaliação dos livros*/
 let estrelas = document.querySelectorAll('icone-estrela')
 document.addEventListener('click', function(e){

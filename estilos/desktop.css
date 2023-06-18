@@ -11,6 +11,15 @@
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
     
 }
+
+/*MENU ESCONDIDO*/
+.navbar-hide{
+    position: fixed; /* Make it stick/fixed */
+    top: -75px;
+    width: 100%;
+    transition: top 0.5s;
+}
+
 /*Logo*/
 .cabecalho a{
     text-decoration: none;
