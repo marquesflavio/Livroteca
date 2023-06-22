@@ -1,6 +1,3 @@
-
-
-
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
 window.onscroll = function() {scrollFunction()};
@@ -53,12 +50,22 @@ darkMode.addEventListener('click', () => {
         botaoLua.classList.remove('show')
         botaoLua.classList.add('hide')
         botaoSol.classList.add('show')
+
+        document.querySelector('.cabecalho').style.backgroundColor = "#0C134F";
+        document.querySelector('.rodape').style.backgroundColor = "#0C134F";
+        document.body.style.backgroundColor = "#D4ADFC"
+        botaoSol.style.color = "#FFD95A"
+
+
         
     } else {
         botaoSol.classList.remove('show')
         botaoSol.classList.add('hide')
         botaoLua.classList.add('show')
         
+        document.querySelector('.cabecalho').style.backgroundColor = "#FFD95A"
+        document.querySelector('.rodape').style.backgroundColor = "#FFD95A"
+        document.body.style.backgroundColor = "#FFF7D4"
     }
 })
 
