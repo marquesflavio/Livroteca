@@ -1,10 +1,9 @@
 @import url(styles.css);
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
     
     .cabecalho{
         background-color: var(--corSecundaria);
-        height: 100px;
         width: 100%;
         padding: 8px;
         display: flex;
@@ -13,6 +12,14 @@
         
     }
     
+    /*MENU ESCONDIDO*/
+    .navbar-hide{
+    position: fixed; /* Make it stick/fixed */
+    top: -100px !important;
+    width: 100%;
+    transition: top 0.5s;
+}
+
     /*Logo*/
   
     .cabecalho a{
@@ -57,14 +64,14 @@
 
 
     /*Livros*/
-.container{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    margin: auto;
-    padding: 15px;
-    gap: 10px;
-    align-items: center;
+    .container{
+        display: grid;
+        margin: auto;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        width: 70%;
+        padding: 25px;
     
     
 }

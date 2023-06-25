@@ -52,25 +52,30 @@ darkMode.addEventListener('click', () => {
         botaoSol.classList.add('show')
 
         document.querySelector('.cabecalho').style.backgroundColor = "#0C134F";
+        document.querySelector('.cabecalho-hide').style.backgroundColor = "#0C134F";
         document.querySelector('.rodape').style.backgroundColor = "#0C134F";
+        document.querySelector('.cabecalho_logo').style.color="lightblue"
+        document.querySelector('.cabecalho_logo_hide').style.color="lightblue"
         document.body.style.backgroundColor = "#D4ADFC"
         botaoSol.style.color = "#FFD95A"
 
-
-        
     } else {
         botaoSol.classList.remove('show')
         botaoSol.classList.add('hide')
         botaoLua.classList.add('show')
         
         document.querySelector('.cabecalho').style.backgroundColor = "#FFD95A"
+        document.querySelector('.cabecalho-hide').style.backgroundColor = "#FFD95A"
         document.querySelector('.rodape').style.backgroundColor = "#FFD95A"
+        document.querySelector('.cabecalho_logo').style.color="#4C3D3D"
+        document.querySelector('.cabecalho_logo_hide').style.color="#4C3D3D"
         document.body.style.backgroundColor = "#FFF7D4"
     }
 })
 
-/*Armazenamento do Estado dos livros com LocalStorage*/
 
+
+/*Armazenamento do Estado dos livros com LocalStorage*/
 let statusLeitura = document.querySelectorAll('#marcaLivro')
 statusLeitura.forEach(function(item){
     item.addEventListener('change', () =>{

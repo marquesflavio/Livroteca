@@ -92,10 +92,10 @@
 .container{
     display: grid;
     margin: auto;
-    grid-template-columns: auto auto auto auto auto;
-    column-gap: 15px;
-    row-gap: 15px;
-    width: 80%;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 70%;
     padding: 25px;
    
 }
@@ -103,7 +103,7 @@
     border: 1px solid black;
     border-collapse: collapse;
     border-radius: 5px;
-    padding: 10px; 
+    padding: 5px; 
     width: 100%;
     /* background-color: aqua; */
     
@@ -149,11 +149,11 @@
     
 }
 .livros-estante{
-    width: 100%;
     margin: 5px 0
 }
 
 .livros_img{
+    border-radius: 10px;
     width: 150px;
     height: 150px;
     margin: auto;
