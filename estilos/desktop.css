@@ -2,22 +2,28 @@
 /* @import url(darkmode.css); */
 
 /*Cabeçalho*/
-.cabecalho{
+.normal{
     background-color: var(--corSecundaria);
     width: 100%;
     padding: 8px;
     display: flex;
     justify-content: space-evenly;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    transition: 1s all;
+
     
 }
 
 /*MENU ESCONDIDO*/
-.navbar-hide{
-    position: fixed; /* Make it stick/fixed */
-    top: -75px;
+.shrink{
+    background-color: var(--corSecundaria);
     width: 100%;
-    transition: top 0.5s;
+    padding: 8px;
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.397);
+    transition: 1s all;
 }
 
 /*Logo*/

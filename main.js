@@ -3,11 +3,16 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector(".navbar-hide").style.top = "0";
+if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    console.log('rolou a pagina')
+    document.querySelector(".cabecalho").classList.remove('normal')
+    document.querySelector(".cabecalho").classList.add('shrink')
+    
 } else {
-    document.querySelector(".navbar-hide").style.top = "-75px";
-}
+    document.querySelector(".cabecalho").classList.add('normal')
+    document.querySelector(".cabecalho").classList.remove('shrink')
+    
+ }
 }
         
 /*Avaliação dos livros*/
